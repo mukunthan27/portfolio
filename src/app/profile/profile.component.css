@@ -1,0 +1,96 @@
+.container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0% 5%;
+}
+.container .profile-container {
+  width: 40%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .profile-container img {
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.container .profile-container .profile-icons {
+  margin-top: 60px;
+}
+.container .profile-container .profile-icons i {
+  margin: 0px 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.container .userInfo {
+  width: 60%;
+  height: 75vh;
+  display: flex;
+  padding-left: 20%;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.container .userInfo h2 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+.container .userInfo h2:nth-child(2) {
+  margin-bottom: 40px;
+}
+.container .userInfo p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    all: unset;
+  }
+  .container .profile-container {
+    all: unset;
+    text-align: center;
+  }
+  .container .profile-container img {
+    margin-top: 80px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container .profile-container .profile-icons {
+    margin-top: 25px;
+  }
+  .container .profile-container .profile-icons i {
+    margin: 0px 40px;
+    margin-bottom: 50px;
+  }
+  .container .userInfo {
+    all: unset;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-align: center;
+  }
+  .container .userInfo h2 {
+    all: unset;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .container .userInfo .userPassion{
+    margin-top: 50px;
+  }
+  .container .userInfo p{
+    font-size: 15px;
+  }
+}

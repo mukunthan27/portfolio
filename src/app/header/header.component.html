@@ -1,0 +1,39 @@
+<div [style.display]="headerProp">
+<div class="header">
+    <div class="header-text">
+        <h2>My PortFolio</h2>
+    </div>
+    <div class="header-nav">
+        <nav>
+            <ul>
+                <li>Education</li>
+                <li>Skills</li>
+                <li>Projects</li>
+                <li>Certification</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars" (click)="controlNav()"></i>
+    </div>
+</div>
+</div>
+<div class="mobile-nav" [style.display]="navProp">
+    <i class="fa-solid fa-x" (click)="controlNav()"></i>
+    <ul>
+        <li>
+            <a>Education</a>
+        </li>
+        <li>
+            <a>Skills</a>
+        </li>
+        <li>
+            <a>Projects</a>
+        </li>
+        <li>
+            <a>Certification</a>
+        </li>
+        <li>
+            <a>Contact</a>
+        </li>
+    </ul>
+</div>

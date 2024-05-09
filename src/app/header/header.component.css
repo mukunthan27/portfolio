@@ -1,0 +1,79 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    position: sticky;
+    z-index: 999;
+    top: 0px;
+    height: 10vh;
+}
+.header .header-text{
+    font-family: "Poetsen One", sans-serif;
+    margin-left: 40px;
+}
+.header .header-nav{
+    margin-right: 40px;
+}
+.header nav ul li{
+    display: inline;
+    margin:0px 25px;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    cursor: pointer;
+}
+.header .header-nav .fa-bars{
+    display: none;
+    margin-right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.mobile-nav{
+    height: 0vh;
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+.mobile-nav .fa-x{
+    display:flex;
+    justify-content: right;
+    margin: 15px;
+    font-size: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.mobile-nav ul{
+    list-style-type: none;
+    width: 100%;
+}
+.mobile-nav ul li{
+    text-align: center;
+    display: flex;
+    height: 18vh;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+.mobile-nav ul li:hover{
+    background-color: #b0e0e6;
+}
+.mobile-nav ul li a{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .header .header-nav nav{
+        display: none;
+    }
+    .header .header-nav .fa-bars{
+        display: unset;
+    }
+}
