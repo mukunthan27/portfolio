@@ -1,0 +1,76 @@
+<div class="container" [ngClass]="hiddenProp == 'none' ? 'hidden': ''">
+    <div class="card">
+        <div class="card-inner" [style.transform]="arr[0]">
+            <div class="card-front">
+                <div class="card-img">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTPWSLRS_2qBFTI1uOUG-GA80B85_QD-kBuQ&s" />
+                </div>
+                <div class="card-Info">
+                    <h2>SSLC</h2>
+                    <p>SHAKESPEARE MATRICULATION SCHOOL</p>
+                    <p>Trichy</p>
+                    <div>
+                        <button (click)="flipper(0)">Read More..</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-back">
+                <h2>SHAKESPEARE MATRICULATION SCHOOL</h2>
+                <p>Palakarai Trichy</p>
+                <p>SSLC</p>
+                <p>Duration : 2015- 2016</p>
+                <p>completed with percentage of : 88%</p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner" [style.transform]="arr[1]">
+            <div class="card-front">
+                <div class="card-img">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTPWSLRS_2qBFTI1uOUG-GA80B85_QD-kBuQ&s" />
+                </div>
+                <div class="card-Info">
+                    <h2>HSC</h2>
+                    <p>ST. JAMES MATRIC HR SEC SCHOOL</p>
+                    <p>Trichy</p>
+                    <div>
+                        <button (click)="flipper(1)">Read More..</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-back">
+                <h2>ST. JAMES MATRIC HR SEC SCHOOL</h2>
+                <p>Palakarai Trichy</p>
+                <p>HSC</p>
+                <p>Duration : 2017- 2018</p>
+                <p>completed with percentage of : 80%</p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner" [style.transform]="arr[2]">
+            <div class="card-front">
+                <div class="card-img">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTPWSLRS_2qBFTI1uOUG-GA80B85_QD-kBuQ&s" />
+                </div>
+                <div class="card-Info">
+                    <h2>B.E COMPUTER SCIENCE AND ENGINEERING</h2>
+                    <p>K.RAMAKRISHNAN COLLEGE OF ENGINEERING</p>
+                    <div>
+                        <button (click)="flipper(2)">Read More..</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-back">
+                <h2>K.RAMAKRISHNAN COLLEGE OF ENGINEERING</h2>
+                <p>Samayapuram Trichy</p>
+                <p>B.E COMPUTER SCIENCE AND ENGINEERING</p>
+                <p>Duration : 2018- 2022</p>
+                <p>completed First class Degree with CGPA : 8.3</p>
+            </div>
+        </div>
+    </div>
+</div>

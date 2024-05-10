@@ -1,0 +1,98 @@
+.container{
+    height: max-content;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5% 25px;
+}
+.hidden{
+    display: none;
+}
+.card{
+    width: 335px;
+    height: 400px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    perspective: 1000px; 
+}
+.card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.card-front{
+    background-color: white;
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+/* .card:hover .card-inner {
+    transform: rotateY(180deg);
+} */
+.card-back {
+    background-color: white;
+    transform: rotateY(180deg);
+    padding: 10px;
+}
+.card-back h2{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.card-back p{
+    padding: 15px 0px;
+}
+.card .card-img img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.card .card-Info{
+    padding: 10px;
+    width: 100%;
+    height: 225px;
+    position: relative;
+}
+.card .card-Info h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.card .card-Info p{
+    padding-left: 10px;
+}
+.card .card-Info p:nth-child(2){
+    margin-bottom: 30px;
+}
+.card .card-Info div{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+.card .card-Info button{
+    width:100px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+    .container{
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+}
